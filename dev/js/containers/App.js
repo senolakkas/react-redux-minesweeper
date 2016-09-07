@@ -21,9 +21,9 @@ var UncontrolledInput = React.createClass({
         alert(grid_y);
         alert(mine_count);
 
-        let game22=GameActions.startNewGame(grid_x, grid_y, mine_count);
+        GameActions.startNewGame(grid_x, grid_y, mine_count);
         alert("game2 startNewGame");
-        alert(game2);
+        //alert(game2);
     },
   render: function() {
     return (
@@ -55,20 +55,21 @@ class App extends Component {
         <Game game={game} actions={actions} />
           <UncontrolledInput />
 
-        <Game2 game={{
-            grid: [
-                [{val: "*", sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-                [{val: 2, sel: false}, {val: "*", sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-                [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-                [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-                [{val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}]
-            ],
-            sel: 0,
-            won: false,
-            lost: false,
-            bombs: 2,
-            total: 16
-        }} actions={actions} />
+        <Game2 game={game} actions={actions} />
+          <Game2 game={{
+              grid: [
+                  [{val: "*", sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
+                  [{val: 2, sel: false}, {val: "*", sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
+                  [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
+                  [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
+                  [{val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}]
+              ],
+              sel: 0,
+              won: false,
+              lost: false,
+              bombs: 2,
+              total: 16
+          }} actions={actions} />
 
 
 

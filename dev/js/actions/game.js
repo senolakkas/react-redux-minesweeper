@@ -16,8 +16,8 @@ export function startNewGame(grid_x, grid_y, mine_count) {
   const X = '*'
 
   var gridd=[
-    [{val: X, sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
     [{val: 2, sel: false}, {val: X, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
+    [{val: X, sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
     [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
     [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
     [{val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}]
@@ -30,12 +30,15 @@ export function startNewGame(grid_x, grid_y, mine_count) {
     bombs: 2,
     total: 16
   }
+  // INITIAL=INITIAL1;
   alert("game(INITIAL, action); 1");
   reducersGame.game(INITIAL1, reducersGame.action);
   alert("game(INITIAL, action); 2");
 
 
-  return INITIAL
+  return {
+    game: INITIAL1
+  }
 }
 
 
