@@ -17,12 +17,10 @@ var UncontrolledInput = React.createClass({
         let grid_x = Number.parseInt(this.refs.grid_x.value);
         let grid_y = Number.parseInt(this.refs.grid_y.value);
         let mine_count = Number.parseInt(this.refs.mine_count.value);
-        alert(grid_x);
-        alert(grid_y);
-        alert(mine_count);
 
+        alert("game2 startNewGame 21");
         GameActions.startNewGame(grid_x, grid_y, mine_count);
-        alert("game2 startNewGame");
+        alert("game2 startNewGame 23");
         //alert(game2);
     },
   render: function() {
