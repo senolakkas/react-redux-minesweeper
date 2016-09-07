@@ -12,7 +12,6 @@ export function startNewGame(grid_x, grid_y, mine_count) {
   alert(grid_y);
   alert(mine_count);
 
-
   const X = '*'
 
   var gridd=[
@@ -30,9 +29,11 @@ export function startNewGame(grid_x, grid_y, mine_count) {
     bombs: 2,
     total: 16
   }
-  // INITIAL=INITIAL1;
+  alert("INITIAL=INITIAL1;");
+  INITIAL=INITIAL1; /// ??
+
   alert("game(INITIAL, action); 1");
-  reducersGame.game(INITIAL1, reducersGame.action);
+  reducersGame.game(INITIAL1, reducersGame.action); // ????
   alert("game(INITIAL, action); 2");
 
 
