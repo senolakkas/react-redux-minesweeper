@@ -7,13 +7,7 @@ console.log("log reducers/game.js 6");
 
 
 
-var gridd=[
-  [{val: X, sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-  [{val: 2, sel: false}, {val: X, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-  [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-  [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
-  [{val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}]
-]
+
 
 
 let INITIAL = {

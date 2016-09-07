@@ -198,11 +198,4 @@ function Game(grid_x, grid_y, mine_count) {
 };
 
 
-export default function startNewGame1() {
-  var grid_x = 12;
-  var grid_y = 12;
-  var mine_count = 10;
-  gamee = new Game11(grid_x, grid_y, mine_count);
-  console.log("log reducers/game.js 31",gamee);
-  alert(game);
-};
+
