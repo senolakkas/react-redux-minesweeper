@@ -12,7 +12,7 @@ console.log("log containers/app.js 7");
 
 var UncontrolledInput = React.createClass({
     startNewGame: function() {
-        alert("demo");
+
         //let grid_x = Number.parseInt(React.findDOMNode(this.refs.grid_x).value);
         let grid_x = Number.parseInt(this.refs.grid_x.value);
         let grid_y = Number.parseInt(this.refs.grid_y.value);
