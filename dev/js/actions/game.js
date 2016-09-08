@@ -30,10 +30,12 @@ export function startNewGame(grid_x, grid_y, mine_count) {
     total: 16
   }
   alert("INITIAL=INITIAL1;");
-  INITIAL=INITIAL1; /// ??
+  INITIAL1; /// ??
+  alert(INITIAL1)
+  reducersGame.setState({ INITIAL: INITIAL1 }); // ???
 
   alert("game(INITIAL, action); 1");
-  reducersGame.game(INITIAL1, reducersGame.action); // ????
+  //reducersGame.game(INITIAL1, reducersGame.action); // ????
   alert("game(INITIAL, action); 2");
 
 

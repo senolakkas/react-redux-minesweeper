@@ -56,8 +56,8 @@ class App extends Component {
         <Game2 game={game} actions={actions} />
           <Game2 game={{
               grid: [
-                  [{val: "*", sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
                   [{val: 2, sel: false}, {val: "*", sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
+                  [{val: "*", sel: false}, {val: 2, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
                   [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
                   [{val: 1, sel: false}, {val: 1, sel: false}, {val: 1, sel: false}, {val: 0, sel: false}],
                   [{val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}, {val: 0, sel: false}]
