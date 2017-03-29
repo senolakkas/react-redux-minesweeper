@@ -7,4 +7,5 @@ react redux minesweeper
 $ git clone https://github.com/senolakkas/react-redux-minesweeper.git app-name
 $ cd app-name
 $ npm install
+$ npm start # start the server
 ```
